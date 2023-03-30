@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AHORCADO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css"/>
+        <script src="js/script_ahorcado.js"></script>
+    </head>
+
+    <body onload="onload_main()">
+        <div id="border"></div> 
+        <div id="div_palabra">
+            <a id="palabra_oculta" target="_blank" rel="noopener noreferrer"></a>
+            <!-- palabra oculta aqui -->
+        </div>
+        <div id="div_botones"><!-- poner bordes -->
+            <button id="A" class="boton_letra" onclick="comprobar('A')">A</button>
+            <button id="B" class="boton_letra" onclick="comprobar('B')">B</button>
+            <button id="C" class="boton_letra" onclick="comprobar('C')">C</button>
+            <button id="D" class="boton_letra" onclick="comprobar('D')">D</button>
+            <button id="E" class="boton_letra" onclick="comprobar('E')">E</button>
+            <button id="F" class="boton_letra" onclick="comprobar('F')">F</button>
+            <button id="G" class="boton_letra" onclick="comprobar('G')">G</button>
+            <button id="H" class="boton_letra" onclick="comprobar('H')">H</button>
+            <button id="I" class="boton_letra" onclick="comprobar('I')">I</button>
+            <button id="J" class="boton_letra" onclick="comprobar('J')">J</button>
+            <button id="K" class="boton_letra" onclick="comprobar('K')">K</button>
+            <button id="L" class="boton_letra" onclick="comprobar('L')">L</button>
+            <button id="M" class="boton_letra" onclick="comprobar('M')">M</button>
+            <button id="N" class="boton_letra" onclick="comprobar('N')">N</button>
+            <button id="Ñ" class="boton_letra" onclick="comprobar('Ñ')">Ñ</button>
+            <button id="O" class="boton_letra" onclick="comprobar('O')">O</button>
+            <button id="P" class="boton_letra" onclick="comprobar('P')">P</button>
+            <button id="Q" class="boton_letra" onclick="comprobar('Q')">Q</button>
+            <button id="R" class="boton_letra" onclick="comprobar('R')">R</button>
+            <button id="S" class="boton_letra" onclick="comprobar('S')">S</button>
+            <button id="T" class="boton_letra" onclick="comprobar('T')">T</button>
+            <button id="U" class="boton_letra" onclick="comprobar('U')">U</button>
+            <button id="V" class="boton_letra" onclick="comprobar('V')">V</button>
+            <button id="W" class="boton_letra" onclick="comprobar('W')">W</button>
+            <button id="X" class="boton_letra" onclick="comprobar('X')">X</button>
+            <button id="Y" class="boton_letra" onclick="comprobar('Y')">Y</button>
+            <button id="Z" class="boton_letra" onclick="comprobar('Z')">Z</button>
+        </div>
+        <div id="div_hangman">
+            <img id="hangman_imgs" src="img/nada.png">
+            <div id="weiner">
+                <img id="weiner_gif" src="img/gif_weiner.gif">
+                <div id="weiner_container">
+                    <h1 id="weiner_text">U DA WEINER</h1>
+                </div>
+                <button id="reset_bt_win" class="retry" onclick="onload_main()">Reintentar?</button>
+            </div>
+        </div>
+        <div id="div_lost">
+            <img id="game_over" src="img/kill2.gif">
+            <div id="lost_container">
+                <h1 id="game_over_text">GAME OVER</h1>
+            </div>
+            <button id="reset_bt" class="retry" onclick="onload_main()">Reintentar?</button>
+        </div>
+    </body>
+</html>
